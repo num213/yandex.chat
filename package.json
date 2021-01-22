@@ -1,0 +1,13 @@
+{
+	"name": "yandex.chat",
+	"description": "Chat for Yandex.Praktikum",
+	"author": "Andrew Zolotov <zolotov.andrew@yandex.ru>",
+	"version": "1.0.0",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.16.1"
+	}
+}
