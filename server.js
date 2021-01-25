@@ -1,17 +1,23 @@
 'use strict';
 
 const express = require('express');
-
-// Constants
+const path = require('path');
 const PORT = 8080;
 const HOST = process.env.HOST || '127.0.0.1';
-
-// App
 const app = express();
-app.get('/', (req, res) => {
-	res.send('Hello World');
+
+app.get('/', function(req, res){
+	res.sendFile(path.join(__dirname + '/index.html'));
+});
+app.get('/login', function(req, res){
+	res.sendFile(path.join(__dirname + '/login.html'));
+});
+app.get('/register', function(req, res){
+	res.sendFile(path.join(__dirname + '/register.html'));
+});
+app.get('/chats', function(req, res){
+	res.sendFile(path.join(__dirname + '/chats.html'));
 });
 
+app.use(express.static(__dirname + '/'));
 app.listen(PORT, HOST);
-console.log('process.env', process.env);
-console.log(`Running on http://${HOST}:${PORT}`);
