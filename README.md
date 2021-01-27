@@ -3,7 +3,7 @@
 ## Run
 
 ### npm
-npm run start
+npm run build
 
 ### Docker
 * docker build -t num213/yandex-chat .
@@ -11,5 +11,4 @@ npm run start
 
 ## Documentation
 
-###Figma Design
-https://www.figma.com/file/1zDWXw7uH1yC4A4RnC7HhW/Yandex.Praktikum.Chat?node-id=0%3A1
+[Figma](https://www.figma.com/file/1zDWXw7uH1yC4A4RnC7HhW/Yandex.Praktikum.Chat?node-id=0%3A1)

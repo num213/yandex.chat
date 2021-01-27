@@ -2,10 +2,15 @@
 	"name": "yandex.chat",
 	"description": "Chat for Yandex.Praktikum",
 	"author": "Andrew Zolotov <zolotov.andrew@yandex.ru>",
+	"license": "ISC",
 	"version": "1.0.0",
 	"main": "server.js",
 	"scripts": {
-		"start": "node server.js"
+		"build": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/num213/yandex.chat.git"
 	},
 	"type": "module",
 	"dependencies": {
