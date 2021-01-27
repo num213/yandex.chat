@@ -1,0 +1,15 @@
+.header {
+    background: #fff;
+    width: 100%;
+}
+.header__content {
+    display: flex;
+
+    height: 45px;
+    padding: 0 10px;
+    border: 1px solid #D9E2E9;
+}
+.header__link {
+    display: flex;
+    align-items: center;
+}

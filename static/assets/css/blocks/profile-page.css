@@ -1,0 +1,10 @@
+.profile-page {
+    background: #faf6f4;
+    margin: 0;
+    padding: 0;
+}
+.profile-page__main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

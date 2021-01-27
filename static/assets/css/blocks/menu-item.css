@@ -1,0 +1,15 @@
+.menu-item__button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: none;
+
+    background: transparent;
+    cursor: pointer;
+}
+.menu-item__button:hover .menu-button__icon {
+    fill: #000;
+}
+.menu-item__button:hover .menu-button__text {
+    color: #000;
+}

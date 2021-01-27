@@ -1,0 +1,23 @@
+.chat-content__header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9E2E9;
+    height: 45px;
+}
+.chat-content__footer {
+    padding: 10px 15px;
+    border-top: 1px solid #D9E2E9;
+}
+.chat-content__messages {
+    flex-grow: 1;
+    padding: 20px 0;
+
+    overflow: auto;
+}
+.chat-content_empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c4c4c4;
+}

@@ -1,0 +1,14 @@
+.chat-menu__item {
+    margin-left: 10px;
+}
+.chat-menu__icon {
+    fill: #c4c4c4;
+}
+.chat-menu__button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.chat-menu__button:hover .chat-menu__icon {
+    fill: #000;
+}

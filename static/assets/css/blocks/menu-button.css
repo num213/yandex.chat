@@ -1,0 +1,9 @@
+.menu-button__icon {
+    fill: #6b6b6b;
+}
+.menu-button__text {
+    margin-left: 5px;
+
+    color: #6b6b6b;
+    font: normal 12px/16px 'Roboto', sans-serif;
+}

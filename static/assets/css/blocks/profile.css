@@ -1,0 +1,22 @@
+.profile__content {
+    display: flex;
+}
+.profile__info {
+    margin-left: 20px;
+}
+.profile__avatar {
+    position: relative;
+}
+.profile__text {
+    padding-bottom: 5px;
+}
+.profile__link {
+    display: block;
+    margin-bottom: 5px;
+}
+.profile__short-name {
+    color: #939597;
+}
+.profile__form {
+    width: 400px;
+}

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Чаты | Чат для Яндекс.Практикума</title>
+	<link rel="stylesheet" type="text/css" href="/static/assets/css/chats.css">
+	<link rel="shortcut icon" href="/static/assets/favicon.ico" type="image/x-icon">
+</head>
+<body class="chat-window chat-window_full-width">
+	<aside class="navigation chat-window__navigation">
+		<header class="navigation__header">
+			<a class="navigation__link" href="/profile">vasya.pupkin</a>
+		</header>
+		<nav class="chat-list">
+			<form class="form chat-list__search">
+				<div class="form__group">
+					<label class="form__label" for="search">Поиск</label>
+					<input class="form__input" id="search" type="text">
+				</div>
+			</form>
+			<ul class="chat-list__items" id="chat-list">
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Nel" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Nel</span>
+							<span class="chat-item__time">12:15</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Пора признать реальный факт: руководитель Центрального Банка </span>
+							<span class="chat-item__unread">3</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Валерия Терпилко" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Валерия Терпилко</span>
+							<span class="chat-item__time">09:32</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">+</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Евгений" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Евгений</span>
+							<span class="chat-item__time">14.01</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">И я прошёл опрос 😉</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Alisa Podchuvalova" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Alisa Podchuvalova</span>
+							<span class="chat-item__time">14.01</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Йоу! Пройди, пожалуйста, опрос. Очень нужно.</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Сергей Волобуев" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Сергей Волобуев</span>
+							<span class="chat-item__time">14.01</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">
+								<span class="chat-item__who">Вы: </span>
+								Сергей, привет. Есть какие-то результаты? Можешь показать плиз
+							</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Maksim Golomazdin" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Maksim Golomazdin</span>
+							<span class="chat-item__time">31.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Написал так, чтоб не перечилсять все сайты</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Alexey Zorin" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Alexey Zorin</span>
+							<span class="chat-item__time">31.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Да смотря куда</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Районный Барыга" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Районный Барыга</span>
+							<span class="chat-item__time">30.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">ничего не получилось решить с весом</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="C10H15N" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">C10H15N</span>
+							<span class="chat-item__time">31.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Мусора обломались, а мы нормально так подняли</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Johny Bravo" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Johny Bravo</span>
+							<span class="chat-item__time">31.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Какой-то клоун на бабки развел</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Никита Базилик" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Никита Базилик</span>
+							<span class="chat-item__time">31.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Год назад брал такой</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item chat-list__item_active">
+					<img src="/static/assets/images/user.svg" alt="Дерипаска" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Дерипаска</span>
+							<span class="chat-item__time">16.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Странно, что всех удивляет рост цен на продовольствие.</span>
+						</div>
+					</div>
+				</li>
+				<li class="chat-item chat-list__item">
+					<img src="/static/assets/images/user.svg" alt="Константин Константинович Константинопольский" class="chat-item__avatar">
+					<div class="chat-item__info">
+						<div class="chat-item__header">
+							<span class="chat-item__name">Константин Константинович Константинопольский</span>
+							<span class="chat-item__time">01.12.2020</span>
+						</div>
+						<div class="chat-item__footer">
+							<span class="chat-item__message">Как тебе такое, Илон Маск?</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</aside>
+	<main class="chat-content chat-window__content">
+		<header class="chat-content__header chat-header">
+			<div class="chat-item chat-header__info">
+				<img class="chat-item__avatar" src="/static/assets/images/user.svg" alt="Дерипаска">
+				<span class="chat-item__name">Дерипаска</span>
+			</div>
+			<menu class="chat-menu chat-header__menu">
+				<li class="chat-menu__item">
+					<button type="button" class="button button_type_modal chat-menu__button" data-target="add-user-modal">
+						<svg class="chat-menu__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.9229 9.03196C12.577 8.86753 12.224 8.72589 11.8649 8.60723C13.028 7.73423 13.7817 6.34412 13.7817 4.78125C13.7817 2.14488 11.6369 0 9.00048 0C6.36407 0 4.21923 2.14488 4.21923 4.78125C4.21923 6.34584 4.97466 7.73733 6.13992 8.61015C5.07229 8.96164 4.07051 9.50857 3.19372 10.2298C1.58595 11.5522 0.468088 13.3969 0.0461076 15.4239C-0.0861503 16.059 0.072299 16.7113 0.480744 17.2136C0.887186 17.7134 1.48987 18 2.13421 18H10.7934C11.1818 18 11.4966 17.6852 11.4966 17.2969C11.4966 16.9085 11.1818 16.5938 10.7934 16.5938H2.13421C1.83405 16.5938 1.65296 16.4262 1.57175 16.3264C1.43151 16.1539 1.37723 15.9294 1.42283 15.7104C2.15249 12.2055 5.24399 9.64526 8.81408 9.55891C8.87592 9.56131 8.93804 9.5625 9.00048 9.5625C9.06351 9.5625 9.12626 9.56127 9.1887 9.55884C10.2828 9.58451 11.335 9.83419 12.3192 10.302C12.6699 10.4687 13.0893 10.3196 13.256 9.96884C13.4227 9.61812 13.2736 9.19867 12.9229 9.03196ZM9.17197 8.15193C9.11491 8.15091 9.05774 8.15038 9.00048 8.15038C8.94373 8.15038 8.88699 8.15094 8.83032 8.152C7.04807 8.06309 5.62548 6.58519 5.62548 4.78125C5.62548 2.92025 7.13948 1.40625 9.00048 1.40625C10.8615 1.40625 12.3755 2.92025 12.3755 4.78125C12.3755 6.58473 10.9536 8.06235 9.17197 8.15193Z"/>
+							<path d="M17.2969 13.957H15.3633V12.0234C15.3633 11.6351 15.0485 11.3203 14.6602 11.3203C14.2718 11.3203 13.957 11.6351 13.957 12.0234V13.957H12.0234C11.6351 13.957 11.3203 14.2718 11.3203 14.6602C11.3203 15.0485 11.6351 15.3633 12.0234 15.3633H13.957V17.2969C13.957 17.6852 14.2718 18 14.6602 18C15.0485 18 15.3633 17.6852 15.3633 17.2969V15.3633H17.2969C17.6852 15.3633 18 15.0485 18 14.6602C18 14.2718 17.6852 13.957 17.2969 13.957Z"/>
+						</svg>
+					</button>
+				</li>
+				<li class="chat-menu__item">
+					<button type="button" class="button button_type_modal chat-menu__button" data-target="remove-user-modal">
+						<svg class="chat-menu__icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.3327 9.8647C13.5701 9.31672 12.7399 8.89495 11.8654 8.60688C13.0281 7.73388 13.7817 6.34391 13.7817 4.78125C13.7817 2.14488 11.6369 0 9.00047 0C6.36407 0 4.21922 2.14488 4.21922 4.78125C4.21922 6.34584 4.97466 7.73733 6.13992 8.61015C5.07229 8.96164 4.07051 9.50857 3.19372 10.2298C1.58595 11.5522 0.468088 13.3969 0.0461076 15.4239C-0.0861503 16.059 0.072299 16.7113 0.480744 17.2136C0.887186 17.7134 1.48987 18 2.13421 18H9.38719C9.77553 18 10.0903 17.6852 10.0903 17.2969C10.0903 16.9085 9.77553 16.5938 9.38719 16.5938H2.13421C1.83405 16.5938 1.65296 16.4262 1.57175 16.3264C1.43151 16.1539 1.37723 15.9294 1.42283 15.7104C2.15253 12.2055 5.24399 9.64526 8.81408 9.55891C8.87592 9.56131 8.93804 9.5625 9.00047 9.5625C9.06333 9.5625 9.12595 9.56127 9.18824 9.55884C10.7515 9.59583 12.2427 10.0945 13.512 11.0066C13.8274 11.2333 14.2667 11.1613 14.4934 10.846C14.72 10.5307 14.648 10.0913 14.3327 9.8647ZM9.17165 8.15196C9.11466 8.15091 9.0576 8.15038 9.00047 8.15038C8.94373 8.15038 8.88699 8.15094 8.83032 8.152C7.04807 8.06309 5.62547 6.58519 5.62547 4.78125C5.62547 2.92025 7.13948 1.40625 9.00047 1.40625C10.8615 1.40625 12.3755 2.92025 12.3755 4.78125C12.3755 6.58484 10.9534 8.06252 9.17165 8.15196Z"/>
+							<path d="M16.0061 15.0117L17.7941 13.2238C18.0687 12.9492 18.0687 12.504 17.7941 12.2294C17.5195 11.9548 17.0743 11.9548 16.7997 12.2294L15.0117 14.0173L13.2238 12.2294C12.9491 11.9548 12.504 11.9548 12.2294 12.2294C11.9548 12.504 11.9548 12.9492 12.2294 13.2238L14.0173 15.0117L12.2294 16.7997C11.9548 17.0743 11.9548 17.5195 12.2294 17.7941C12.3667 17.9314 12.5466 18 12.7266 18C12.9065 18 13.0865 17.9314 13.2238 17.7941L15.0117 16.0061L16.7997 17.7941C16.937 17.9314 17.1169 18 17.2969 18C17.4769 18 17.6568 17.9314 17.7941 17.7941C18.0687 17.5195 18.0687 17.0743 17.7941 16.7997L16.0061 15.0117Z"/>
+						</svg>
+					</button>
+				</li>
+				<li class="chat-menu__item">
+					<button type="button" class="button button_type_modal chat-menu__button" data-target="remove-chat-modal">
+						<svg class="chat-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.5 4.5H10.5C10.086 4.5 9.75 4.836 9.75 5.25C9.75 5.664 10.086 6 10.5 6H19.5V15H11.25C11.0573 15 10.8724 15.0739 10.7329 15.207L6.75 18.9986V15.75C6.75 15.336 6.414 15 6 15H4.5V10.5C4.5 10.086 4.164 9.75 3.75 9.75C3.336 9.75 3 10.086 3 10.5V15C3 15.8273 3.67275 16.5 4.5 16.5H5.25V19.8743C5.25 20.319 5.50087 20.7105 5.90512 20.8965C6.05813 20.967 6.219 21.0011 6.37838 21.0011C6.64013 21.0011 6.89775 20.9081 7.10775 20.7278C7.1175 20.7195 7.12725 20.7109 7.13663 20.7019L11.55 16.5H19.5C20.3272 16.5 21 15.8273 21 15V6C21 5.17275 20.3272 4.5 19.5 4.5Z"/>
+							<path d="M3.21966 8.40525C3.36591 8.55188 3.55791 8.625 3.74991 8.625C3.94191 8.625 4.1339 8.55188 4.28015 8.40525L5.8124 6.873L7.34465 8.40525C7.4909 8.55188 7.6829 8.625 7.8749 8.625C8.0669 8.625 8.2589 8.55188 8.40515 8.40525C8.69803 8.11238 8.69803 7.63763 8.40515 7.34475L6.8729 5.8125L8.40515 4.28025C8.69803 3.98737 8.69803 3.51262 8.40515 3.21975C8.11265 2.92687 7.63715 2.92687 7.34465 3.21975L5.8124 4.752L4.28015 3.21975C3.98766 2.92687 3.51216 2.92687 3.21966 3.21975C2.92678 3.51262 2.92678 3.98737 3.21966 4.28025L4.7519 5.8125L3.21966 7.34475C2.92678 7.63763 2.92678 8.11238 3.21966 8.40525Z"/>
+						</svg>
+					</button>
+				</li>
+			</menu>
+		</header>
+		<div class="chat-content__messages">
+			<div class="message-date message-date_center">15 декабря 2020</div>
+			<div class="message">
+				<div class="message__content">
+					<img class="message__avatar" src="/static/assets/images/user.svg" alt="Дерипаска">
+					<div class="message__info">
+						<span class="message__author">Дерипаска</span>
+						<img class="message__image" src="/static/assets/uploads/cannabis.jpg" alt="Загруженная фотография">
+					</div>
+					<div class="message__time">12:14</div>
+				</div>
+			</div>
+			<div class="message">
+				<div class="message__content">
+					<div class="message__info">
+						<div class="message__text">
+							В Канаде ребенок получил конфеты с каннабисом на Хэллоуин
+							<br>
+							Родители из канадского города Колдбрук нашли конфеты с каннабисом среди сладостей, которые их ребенок получил на Хэллоуин, полиция занимается расследованием инцидента.
+							Сообщается, что в четверг родители проверили сладости, которыми его ребенка угостили жители города во время Хэллоуина. Среди конфет они обнаружили упаковку с мармеладом, на которой была специальная этикетка, указывающая на то, что в состав конфет входил каннабис.
+							<br>
+							Пока неизвестно, кто именно дал ребенку эти сладости.
+							<br>
+							В ночь с 31 октября на 1 ноября в англоязычных странах отмечается праздник Хэллоуин, также известный как канун Дня всех святых. С наибольшим размахом Хэллоуин отмечается в США и Канаде, где он наиболее популярен. Обычно дети, наряжаясь в костюмы чудовищ, ходят по соседским домам, пугая взрослых, которые откупаются от них сладостями.
+						</div>
+					</div>
+					<div class="message__time">12:14</div>
+				</div>
+			</div>
+			<div class="message">
+				<div class="message__content">
+					<img class="message__avatar" src="/static/assets/images/user.svg" alt="Василий Пупкин">
+					<div class="message__info">
+						<span class="message__author" style="color:#E93E3A;">Василий Пупкин</span>
+						<div class="message__text">
+							Забейте и не разочаровывайтесь, особенно если вы прожённый торч. А если вы состоятельный и торчите через раз — не прибавляйте себе лишних зависимостей. У людей и так дохуя вредных привычек.
+						</div>
+					</div>
+					<div class="message__time">15:30</div>
+				</div>
+			</div>
+			<div class="message-date message-date_center">16 декабря 2020</div>
+			<div class="message">
+				<div class="message__content">
+					<img class="message__avatar" src="/static/assets/images/user.svg" alt="Дерипаска">
+					<div class="message__info">
+						<span class="message__author">Дерипаска</span>
+						<div class="message__text">
+							Странно, что всех удивляет рост цен на продовольствие. Было бы удивительно, если бы они не росли. Нужно посмотреть на то, что происходило последние 10-15 лет: под какой процент аграрный сектор получал возможность финансировать свои проекты. Я думаю, в среднем выйдет не меньше, чем 12% годовых. Ну и какую прибыль он должен получать, чтоб отдать эти проценты?
+							<br>
+							Очевидно, что в аграрном секторе прошли серьезные изменения, были нормальные министры и люди, которые курировали аграрный вопрос: вспомним Зубкова, Ткачева, Гордеева и Патрушева. Но, тем не менее, ни они, ни предприниматели, ни фермеры чуда не смогут сделать, до тех пор, пока мы предоставляем сельскому хозяйству  деньги под ростовщические проценты, а четверть населения страны переехало в так называемую «Большую Москву», плюс, наверное, 95% самого активного населения.
+							<br>
+							Мы должны удивляться, что вообще есть продовольствие в достатке. Здесь нужно менять подход: если мы предоставим аграрному сектору деньги хотя бы под такой же процент, как в Европе или в Америке, не будет никакого роста цен. Будет избыточное предложение, что и доказал Зубков, когда первым предоставил возможность финансировать строительство свинокомплексов: свинины было завались, и цены на нее только падали.
+							<br>
+							Необходимы серьезные вложения: в инфраструктуру, в логистику, хранение, чтобы убрать потери, чтобы повысить эффективность переработки. И тогда предложение будет значительно превышать спрос, особенно в «зажиточных» регионах, и не будет никаких проблем с ценами. Все команды по остановке роста цен, вроде,  накануне были отданы (вопрос — кому это удастся).
+							<br>
+							А может, давайте попробуем пойти испытанным путем нашего любимого Центрального Банка в «борьбе с инфляцией»: давайте повысим процентные ставки? И посмотрим, насколько цены упадут.
+						</div>
+					</div>
+					<div class="message__time">16:32</div>
+				</div>
+			</div>
+		</div>
+		<footer class="chat-content__footer chat-footer">
+			<form class="message-form chat-footer__form" action="/chats">
+				<button type="button" class="message-form__attach-button" id="message-attach-button" data-target="menu-attach">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.0002 0C8.4123 0 5.49243 2.91899 5.49243 6.50784V18.8286C5.49243 19.2684 5.84831 19.6243 6.28821 19.6243C6.72783 19.6243 7.0837 19.2684 7.0837 18.8286V6.50784C7.0837 3.79695 9.28876 1.59132 12.0002 1.59132C14.7119 1.59132 16.9169 3.79695 16.9169 6.50784V19.2102C16.9169 20.9736 15.4818 22.4088 13.718 22.4088C13.7049 22.4088 13.6931 22.4158 13.6801 22.4165C13.6661 22.4157 13.6552 22.4088 13.6413 22.4088C11.8776 22.4088 10.4425 20.9736 10.4425 19.2102V11.5906C10.4425 10.7312 11.1409 10.0328 12.0002 10.0328C12.8596 10.0328 13.558 10.7312 13.558 11.5906V18.8286C13.558 19.2684 13.9146 19.6243 14.3536 19.6243C14.7925 19.6243 15.1493 19.2684 15.1493 18.8286V11.5906C15.1493 9.85406 13.7367 8.44153 12.0002 8.44153C10.2639 8.44153 8.85128 9.85411 8.85128 11.5906V19.2102C8.85128 21.8509 10.9996 24 13.6412 24C13.6551 24 13.6661 23.993 13.68 23.9922C13.6931 23.993 13.7049 24 13.718 24C16.359 24 18.5079 21.8509 18.5079 19.2102V6.50784C18.5079 2.91899 15.5881 0 12.0002 0Z"/>
+					</svg>
+				</button>
+				<menu class="menu menu_closed menu_type_attach_file" id="menu-attach">
+					<li class="menu__item menu-item">
+						<button type="button" class="menu-item__button menu-button button button_type_modal modal-open-button" data-target="attach-media-modal">
+							<svg class="menu-button__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.1285 7.42236C9.00179 7.42236 8.08838 8.33574 8.08838 9.46248C8.08838 10.5892 9.00175 11.5026 10.1285 11.5026C11.2552 11.5026 12.1686 10.5892 12.1686 9.46248C12.1686 8.33574 11.2552 7.42236 10.1285 7.42236ZM10.1285 10.5311C9.5383 10.5311 9.05986 10.0526 9.05986 9.46243C9.05986 8.87224 9.5383 8.3938 10.1285 8.3938C10.7187 8.3938 11.1971 8.87224 11.1971 9.46243C11.1971 10.0526 10.7187 10.5311 10.1285 10.5311Z"/>
+								<path d="M18.2644 2.75925L5.00379 1.25349C4.48913 1.18032 3.96769 1.33057 3.57088 1.66639C3.17412 1.97404 2.91979 2.43007 2.86656 2.9293L2.62371 4.92083H1.87077C0.802133 4.92083 0.000656342 5.868 0.000656342 6.93664V16.87C-0.0262595 17.889 0.778007 18.737 1.79709 18.7639C1.82163 18.7645 1.84622 18.7647 1.87077 18.7644H15.2043C16.2729 18.7644 17.2444 17.9386 17.2444 16.87V16.4814C17.5757 16.4174 17.89 16.285 18.1673 16.0928C18.5608 15.7615 18.8128 15.2923 18.8716 14.7813L19.9888 4.92083C20.1027 3.84973 19.3341 2.8862 18.2644 2.75925ZM16.2729 16.87C16.2729 17.4043 15.7386 17.7929 15.2043 17.7929H1.87077C1.3881 17.8071 0.985337 17.4273 0.971159 16.9446C0.970415 16.9197 0.970741 16.8948 0.972135 16.87V15.0728L4.73663 12.304C5.18885 11.9568 5.82581 11.9877 6.24242 12.3769L8.8897 14.7084C9.29172 15.046 9.79777 15.2347 10.3227 15.2428C10.733 15.2478 11.1367 15.1385 11.4884 14.927L16.273 12.1583V16.87H16.2729ZM16.2729 11.0168L10.9783 14.1013C10.5237 14.3706 9.94825 14.3219 9.5454 13.9798L6.87385 11.624C6.10817 10.9661 4.98905 10.9257 4.178 11.5268L0.972135 13.8584V6.93664C0.972135 6.40232 1.33645 5.89231 1.87077 5.89231H15.2043C15.7751 5.91598 16.2361 6.36653 16.2729 6.93664V11.0168ZM19.0183 4.7897C19.0179 4.7929 19.0177 4.79616 19.0173 4.79936L17.8758 14.6599C17.8778 14.9155 17.7612 15.1577 17.5601 15.3156C17.4629 15.4128 17.2443 15.4613 17.2443 15.5099V6.93664C17.206 5.83021 16.311 4.94589 15.2042 4.92083H3.59515L3.81373 3.02645C3.86114 2.78114 3.9894 2.55884 4.17804 2.39498C4.39105 2.24771 4.64858 2.17905 4.90668 2.20066L18.1431 3.73073C18.6771 3.78144 19.069 4.25556 19.0183 4.7897Z"/>
+							</svg>
+							<span class="menu-button__text">Фото или видео</span>
+						</button>
+					</li>
+					<li class="menu__item menu-item">
+						<button type="button" class="menu-item__button menu-button button button_type_modal modal-open-button" data-target="attach-file-modal">
+							<svg class="menu-button__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.4358 10.1539C10.4341 10.3194 10.4602 10.4841 10.5127 10.6411L8.97426 11.6667C8.70241 11.4559 8.36951 11.3389 8.02552 11.3334C7.17587 11.3341 6.48759 12.0234 6.48828 12.8731C6.48897 13.7218 7.17681 14.4096 8.02552 14.4103C8.35695 14.4019 8.67836 14.2947 8.94859 14.1027L10.4871 15.1026C10.4574 15.2289 10.4402 15.3577 10.4358 15.4873C10.4358 16.3369 11.1245 17.0257 11.9742 17.0257C12.8239 17.0257 13.5127 16.337 13.5127 15.4873C13.5127 14.6376 12.8239 13.9488 11.9742 13.9488C11.6485 13.9446 11.3315 14.0534 11.0768 14.2565L9.5127 13.2565C9.54239 13.1303 9.55957 13.0014 9.56399 12.8719C9.55942 12.7507 9.54224 12.6304 9.5127 12.5129L11.1537 11.4616C11.3995 11.6156 11.6843 11.6957 11.9742 11.6924C12.8239 11.6924 13.5127 11.0036 13.5127 10.1539C13.5127 9.30425 12.8239 8.61548 11.9742 8.61548C11.1245 8.61548 10.4358 9.3042 10.4358 10.1539ZM8.02557 13.3846C7.74234 13.3846 7.51275 13.155 7.51275 12.8718C7.51275 12.5886 7.74234 12.359 8.02557 12.359C8.3088 12.359 8.53839 12.5886 8.53839 12.8718C8.53839 13.155 8.30875 13.3846 8.02557 13.3846ZM11.9743 14.9744C12.2575 14.9744 12.4871 15.204 12.4871 15.4872C12.4871 15.7704 12.2575 16 11.9743 16C11.6911 16 11.4615 15.7704 11.4615 15.4872C11.4615 15.204 11.6911 14.9744 11.9743 14.9744ZM12.4871 10.1539C12.4871 10.4371 12.2575 10.6667 11.9743 10.6667C11.6911 10.6667 11.4615 10.4371 11.4615 10.1539C11.4615 9.87066 11.6911 9.64107 11.9743 9.64107C12.2575 9.64107 12.4871 9.87066 12.4871 10.1539Z"/>
+								<path d="M17.7949 5.56408L12.3589 0.153861C12.2643 0.0572256 12.1352 0.00196314 12 0H4.61538C3.19927 0 2.05127 1.148 2.05127 2.56411V17.4359C2.05127 18.852 3.19927 20 4.61538 20H15.3846C16.8007 20 17.9487 18.852 17.9487 17.4359V5.92304C17.9468 5.78783 17.8915 5.65881 17.7949 5.56408ZM12.5641 5.12822V1.79485L16.1795 5.3846H12.8205C12.6939 5.39967 12.5791 5.30927 12.5641 5.18269C12.5619 5.16463 12.5619 5.14633 12.5641 5.12822ZM16.9231 17.4359C16.9231 18.2855 16.2342 18.9744 15.3846 18.9744H4.61538C3.76573 18.9744 3.07691 18.2856 3.07691 17.4359V2.56411C3.07691 1.71446 3.76568 1.02564 4.61538 1.02564H11.5384V5.12822C11.5384 5.83627 12.1124 6.41025 12.8205 6.41025H16.9231V17.4359Z"/>
+							</svg>
+							<span class="menu-button__text">Файл</span>
+						</button>
+					</li>
+					<li class="menu__item menu-item">
+						<button type="button" class="menu-item__button menu-button">
+							<svg class="menu-button__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16.6388 3.47738C15.1119 1.26762 12.6921 0 10.0003 0C7.30846 0 4.88866 1.26762 3.36182 3.47738C1.84249 5.67598 1.49167 8.45945 2.42151 10.9186C2.67022 11.5902 3.06557 12.2427 3.59378 12.8541L9.46792 19.7538C9.60077 19.91 9.79542 20 10.0003 20C10.2052 20 10.3998 19.91 10.5327 19.7538L16.4052 12.8559C16.9357 12.241 17.3306 11.5893 17.5772 10.9231C18.5089 8.45945 18.1581 5.67598 16.6388 3.47738ZM16.2677 10.4333C16.0775 10.9473 15.767 11.4555 15.3453 11.9443C15.3441 11.9454 15.343 11.9466 15.342 11.948L10.0003 18.2221L4.6553 11.9441C4.23385 11.4557 3.92335 10.9476 3.73128 10.4287C2.96229 8.39488 3.25413 6.09348 4.51217 4.27273C5.77417 2.44617 7.77464 1.39859 10.0003 1.39859C12.2259 1.39859 14.2262 2.44613 15.4882 4.27273C16.7465 6.09348 17.0385 8.39488 16.2677 10.4333Z"/>
+								<path d="M10.0003 4.14917C7.8411 4.14917 6.08423 5.90581 6.08423 8.06526C6.08423 10.2247 7.84087 11.9814 10.0003 11.9814C12.1598 11.9814 13.9164 10.2247 13.9164 8.06526C13.9164 5.90604 12.1595 4.14917 10.0003 4.14917ZM10.0003 10.5827C8.6122 10.5827 7.48282 9.45335 7.48282 8.06522C7.48282 6.6771 8.6122 5.54772 10.0003 5.54772C11.3884 5.54772 12.5178 6.6771 12.5178 8.06522C12.5178 9.45335 11.3884 10.5827 10.0003 10.5827Z"/>
+							</svg>
+							<span class="menu-button__text">Геолокация</span>
+						</button>
+					</li>
+				</menu>
+				<input class="message-form__input" type="text" id="message">
+				<button type="submit" class="message-form__send-button">
+					<img id="send-message" src="/static/assets/images/send-message.svg" alt="Отправить">
+				</button>
+			</form>
+		</footer>
+	</main>
+	<div class="modal modal_closed modal_type_default box" id="add-user-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Добавить участника</span>
+				<button type="button" class="modal__close" data-target="add-user-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<form class="form">
+					<div class="form__group">
+						<label class="form__label" for="login_search_add">Логин</label>
+						<input id="login_search_add" class="form__input" type="text" />
+					</div>
+				</form>
+				<ul class="user-list user-list_type_search">
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="alice_goldfinch" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@alice_goldfinch</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Alisa Podchuvalova</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@kroshenkakartoshenka" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@kroshenkakartoshenka</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Daria Koltsova 🇸🇪</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@xx_nemesis" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@xx_nemesis</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Валерочка</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@loratodorova" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@loratodorova</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Anastasia</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@ksun_del" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@ksun_del</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Ksun_del</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</main>
+		</div>
+	</div>
+	<div class="modal modal_closed modal_type_default box" id="remove-user-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Удалить участника</span>
+				<button type="button" class="modal__close" data-target="remove-user-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<form class="form">
+					<div class="form__group">
+						<label class="form__label" for="login_search_remove">Логин</label>
+						<input id="login_search_remove" class="form__input" type="text" />
+					</div>
+				</form>
+				<ul class="user-list user-list_type_search">
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="alice_goldfinch" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@alice_goldfinch</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Alisa Podchuvalova</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@kroshenkakartoshenka" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@kroshenkakartoshenka</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Daria Koltsova 🇸🇪</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@xx_nemesis" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@xx_nemesis</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Валерочка</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@loratodorova" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@loratodorova</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Anastasia</span>
+							</div>
+						</div>
+					</li>
+					<li class="user-list__item chat-item">
+						<img src="/static/assets/images/user.svg" alt="@ksun_del" class="chat-item__avatar">
+						<div class="chat-item__info">
+							<div class="chat-item__header">
+								<span class="chat-item__name">@ksun_del</span>
+							</div>
+							<div class="chat-item__footer">
+								<span class="chat-item__message">Ksun_del</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</main>
+		</div>
+	</div>
+	<div class="modal modal_closed modal_type_default box" id="remove-chat-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Удалить чат</span>
+				<button type="button" class="modal__close" data-target="remove-chat-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<p class="text modal__text">
+					Вся история сообщение после удаления пропадёт.<br>
+					Вы уверены, что хотите удалить этот чат?
+				</p>
+				<button type="button" class="button button_full-width button_type_primary" onclick="window.location = '/chats-select'">Да, удалить чат</button>
+				<button type="button" class="button button_full-width button_type_link modal__button-cancel modal__close" data-target="remove-chat-modal">нет, не удалять</button>
+			</main>
+		</div>
+	</div>
+	<div class="modal modal_closed modal_type_default box" id="attach-media-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Загрузить фото или видео</span>
+				<button type="button" class="modal__close" data-target="attach-media-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<form class="form">
+					<div class="form__content">
+						<div class="form__group">
+							<input type="file" id="media-file" class="form__file">
+							<label for="media-file" class="form__file-label">
+								<span class="form__file-text">Выберите фото или видео</span>
+							</label>
+						</div>
+						<div class="form__group form__group_type_inline">
+							<input class="form__submit" type="submit" value="Загрузить">
+							<button type="button" class="button button_type_link modal__button-cancel modal__close" data-target="attach-media-modal">Отменить</button>
+						</div>
+					</div>
+				</form>
+			</main>
+		</div>
+	</div>
+	<div class="modal modal_closed modal_type_default box" id="attach-file-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Загрузить файл</span>
+				<button type="button" class="modal__close" data-target="attach-file-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<form class="form">
+					<div class="form__content">
+						<div class="form__group">
+							<input type="file" id="default-file" class="form__file">
+							<label for="default-file" class="form__file-label">
+								<span class="form__file-text">Выберите файл</span>
+							</label>
+						</div>
+						<div class="form__group form__group_type_inline">
+							<input class="form__submit" type="submit" value="Загрузить">
+							<button type="button" class="button button_type_link modal__button-cancel modal__close" data-target="attach-file-modal">Отменить</button>
+						</div>
+					</div>
+				</form>
+			</main>
+		</div>
+	</div>
+	<div class="overlay overlay_closed overlay_type_modal" id="modal-overlay"></div>
+
+	<script type="module" src="/static/assets/js/chat.js"></script>
+</body>
+<script src="/static/assets/js/modal.js"></script>
+</html>

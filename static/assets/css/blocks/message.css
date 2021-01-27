@@ -1,0 +1,39 @@
+.message {
+    font-family: 'Roboto', sans-serif;
+}
+.message__content {
+    display: flex;
+    padding: 10px 15px;
+    align-items: flex-start;
+}
+.message__avatar + .message__info {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.message__info {
+    flex-grow: 1;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.message__author {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #2F2E42;
+}
+.message__text {
+    font-size: 14px;
+    line-height: 19px;
+    color: #2F2E42;
+}
+.message__image {
+    max-width: 320px;
+}
+.message__time {
+    font-size: 12px;
+    line-height: 20px;
+    color: #939597;
+}

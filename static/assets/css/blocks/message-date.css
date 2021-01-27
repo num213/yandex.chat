@@ -1,0 +1,7 @@
+.message-date {
+    color: #c4c4c4;
+    font: normal 12px/16px 'Roboto', sans-serif;
+}
+.message-date_center {
+    text-align: center;
+}

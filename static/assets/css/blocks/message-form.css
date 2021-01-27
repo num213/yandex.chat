@@ -1,0 +1,22 @@
+.message-form__input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid #D9E2E9;
+    box-sizing: border-box;
+    border-radius: 15px;
+    outline: none;
+}
+.message-form__send-button,
+.message-form__attach-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+.message-form__attach-button svg {
+    fill: #c4c4c4;
+}
+.message-form__attach-button:hover svg {
+    fill: #000;
+}

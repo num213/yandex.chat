@@ -1,0 +1,14 @@
+.chat-window_full-width {
+    display: flex;
+}
+.chat-window__navigation {
+    width: 335px;
+
+    background-color: rgba(240, 230, 220, 0.27);
+}
+.chat-window__content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    min-width: 640px;
+}

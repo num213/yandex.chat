@@ -1,0 +1,6 @@
+.avatar-link__icon {
+    fill: none;
+}
+.avatar__link:hover .avatar-link__icon {
+    fill: #fff;
+}

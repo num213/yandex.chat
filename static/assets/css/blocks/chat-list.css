@@ -1,0 +1,25 @@
+.chat-list__search {
+    padding: 0 15px 15px 15px;
+}
+.chat-list__items {
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+
+    list-style-type: none;
+}
+.chat-list__item {
+    display: flex;
+    align-items: center;
+
+    padding: 10px 15px;
+    border-top: 1px solid #fff;
+
+    cursor: pointer;
+}
+.chat-list__item:hover {
+    background-color: #f3ebe4;
+}
+.chat-list__item_active {
+    background-color: #f1e8de;
+}

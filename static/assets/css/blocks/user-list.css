@@ -1,0 +1,17 @@
+.user-list_type_search {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    max-height: 190px;
+    margin-top: 20px;
+    overflow-y: auto;
+}
+.user-list__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+    cursor: pointer;
+}
+.user-list__item:hover {
+    background-color: #f6f6f6;
+}

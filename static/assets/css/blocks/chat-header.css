@@ -1,0 +1,13 @@
+.chat-header__info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.chat-header__menu {
+    display: flex;
+    margin: 0 15px 0 0;
+    padding: 0;
+
+    align-items: center;
+    list-style-type: none;
+}

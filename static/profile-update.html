@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Редактирование профиля | Чат для Яндекс.Практикума</title>
+	<link rel="stylesheet" type="text/css" href="/static/assets/css/profile.css">
+	<link rel="shortcut icon" href="/static/assets/favicon.ico" type="image/x-icon">
+</head>
+<body class="profile-page">
+	<header class="header">
+		<div class="header__content">
+			<a class="header__link header-link link_type_with-icon" href="/profile">
+				<svg class="header-link__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M8.07354 10.0042L15.5555 2.52195C15.7615 2.31642 15.8748 2.04163 15.8748 1.74862C15.8748 1.45545 15.7615 1.18081 15.5555 0.974959L14.8999 0.319675C14.6942 0.113496 14.4192 0 14.1262 0C13.8332 0 13.5586 0.113496 13.3527 0.319675L4.44427 9.22797C4.23761 9.43447 4.12444 9.71041 4.12525 10.0037C4.12444 10.2984 4.23744 10.574 4.44427 10.7807L13.3444 19.6803C13.5503 19.8865 13.8249 20 14.1181 20C14.4111 20 14.6857 19.8865 14.8918 19.6803L15.5472 19.025C15.9737 18.5985 15.9737 17.9042 15.5472 17.4779L8.07354 10.0042Z"/>
+				</svg>
+				<span class="header-link__text">Назад</span>
+			</a>
+		</div>
+	</header>
+	<main class="profile-page__main">
+		<div class="profile">
+			<div class="profile__content">
+				<div class="profile__avatar avatar">
+					<img class="avatar__photo" src="/static/assets/uploads/me.png" alt="Фотография">
+					<a class="avatar__link avatar-link button button_type_modal" data-target="avatar-modal">
+						<svg class="avatar-link__icon" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M31.9021 7.55988C31.2433 6.86977 30.3337 6.46197 29.2985 6.46197H24.0913V6.39924C24.0913 5.61502 23.7776 4.86216 23.2443 4.36026C22.711 3.82699 21.9895 3.51331 21.2053 3.51331H11.7947C10.9791 3.51331 10.2576 3.82699 9.72433 4.36026C9.19106 4.89353 8.87738 5.61502 8.87738 6.39924V6.46197H3.70152C2.66635 6.46197 1.75665 6.86977 1.09791 7.55988C0.439164 8.21863 0 9.15969 0 10.1635V25.7852C0 26.8203 0.407795 27.73 1.09791 28.3888C1.75665 29.0475 2.69772 29.4867 3.70152 29.4867H29.2985C30.3337 29.4867 31.2433 29.0789 31.9021 28.3888C32.5608 27.73 33 26.789 33 25.7852V10.1635C33 9.12832 32.5922 8.21863 31.9021 7.55988ZM31.3688 25.7852H31.3375C31.3375 26.3498 31.1179 26.8517 30.7414 27.2281C30.365 27.6045 29.8631 27.8241 29.2985 27.8241H3.70152C3.13688 27.8241 2.63498 27.6045 2.25856 27.2281C1.88213 26.8517 1.66255 26.3498 1.66255 25.7852V10.1635C1.66255 9.59885 1.88213 9.09695 2.25856 8.72053C2.63498 8.3441 3.13688 8.12452 3.70152 8.12452H9.7557C10.2262 8.12452 10.6027 7.74809 10.6027 7.27756V6.36787C10.6027 6.02281 10.7281 5.70912 10.9477 5.48954C11.1673 5.26996 11.481 5.14448 11.826 5.14448H21.2053C21.5504 5.14448 21.8641 5.26996 22.0837 5.48954C22.3032 5.70912 22.4287 6.02281 22.4287 6.36787V7.27756C22.4287 7.74809 22.8051 8.12452 23.2757 8.12452H29.3298C29.8945 8.12452 30.3964 8.3441 30.7728 8.72053C31.1492 9.09695 31.3688 9.59885 31.3688 10.1635V25.7852Z"/>
+							<path d="M16.4999 10.2576C14.3669 10.2576 12.422 11.1359 11.0418 12.5162C9.63016 13.9278 8.7832 15.8412 8.7832 17.9743C8.7832 20.1074 9.66153 22.0523 11.0418 23.4325C12.4534 24.8441 14.3669 25.6911 16.4999 25.6911C18.633 25.6911 20.5779 24.8127 21.9581 23.4325C23.3697 22.0209 24.2167 20.1074 24.2167 17.9743C24.2167 15.8412 23.3383 13.8964 21.9581 12.5162C20.5779 11.1359 18.633 10.2576 16.4999 10.2576ZM20.7661 22.2719C19.6682 23.3384 18.1625 24.0285 16.4999 24.0285C14.8374 24.0285 13.3317 23.3384 12.2338 22.2719C11.1359 21.1739 10.4771 19.6682 10.4771 18.0057C10.4771 16.3432 11.1672 14.8374 12.2338 13.7395C13.3317 12.6416 14.8374 11.9829 16.4999 11.9829C18.1625 11.9829 19.6682 12.673 20.7661 13.7395C21.864 14.8374 22.5228 16.3432 22.5228 18.0057C22.5541 19.6682 21.864 21.1739 20.7661 22.2719Z"/>
+							<path d="M27.6672 13.3004C28.5161 13.3004 29.2043 12.6122 29.2043 11.7633C29.2043 10.9144 28.5161 10.2262 27.6672 10.2262C26.8183 10.2262 26.1301 10.9144 26.1301 11.7633C26.1301 12.6122 26.8183 13.3004 27.6672 13.3004Z"/>
+						</svg>
+					</a>
+				</div>
+				<div class="profile__info">
+					<form class="form profile__form" action="/profile">
+						<div class="form__content">
+							<div class="form-list form-list_type_inline form__group">
+								<div class="form-list__element">
+									<label class="form__label" for="name">Имя</label>
+									<input id="name" class="form__input" type="text" value="Вася" />
+								</div>
+								<div class="form-list__element">
+									<label class="form__label" for="surname">Фамилия</label>
+									<input id="surname" class="form__input" type="text" value="Пупкин" />
+								</div>
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="email">Почта</label>
+								<input id="email" class="form__input" type="email" value="vasya.pupkin@example.com"/>
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="login">Логин</label>
+								<input id="login" class="form__input" type="text" value="god" />
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="nickname">Имя в чате</label>
+								<input id="nickname" class="form__input" type="text" />
+							</div>
+							<div class="form__group">
+								<label class="form__label" for="phone">Телефон</label>
+								<input id="phone" class="form__input" type="text" />
+							</div>
+							<div class="form__group form__group_type_inline">
+								<input class="form__submit" type="submit" value="Сохранить">
+								<a href="/profile" class="link">Отменить</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="modal modal_closed modal_type_default box" id="avatar-modal">
+		<div class="box__content box__content_type_modal">
+			<div class="box__border"></div>
+			<header class="modal__header">
+				<span class="modal__title">Загрузить фото</span>
+				<button class="modal__close" data-target="avatar-modal">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.87424 7.51217L14.7149 1.67129C15.0951 1.29136 15.0951 0.677076 14.7149 0.297151C14.335 -0.0827742 13.7207 -0.0827742 13.3408 0.297151L7.49992 6.13803L1.65922 0.297151C1.27911 -0.0827742 0.665003 -0.0827742 0.285078 0.297151C-0.0950258 0.677076 -0.0950258 1.29136 0.285078 1.67129L6.12579 7.51217L0.285078 13.353C-0.0950258 13.733 -0.0950258 14.3473 0.285078 14.7272C0.474417 14.9167 0.723371 15.0119 0.972146 15.0119C1.22092 15.0119 1.4697 14.9167 1.65922 14.7272L7.49992 8.8863L13.3408 14.7272C13.5303 14.9167 13.7791 15.0119 14.0279 15.0119C14.2767 15.0119 14.5254 14.9167 14.7149 14.7272C15.0951 14.3473 15.0951 13.733 14.7149 13.353L8.87424 7.51217Z"/>
+					</svg>
+				</button>
+			</header>
+			<main class="modal__content">
+				<form class="form">
+					<div class="form__content">
+						<div class="form__group">
+							<input type="file" id="media-file" class="form__file">
+							<label for="media-file" class="form__file-label">
+								<span class="form__file-text">Выберите фото</span>
+							</label>
+						</div>
+						<div class="form__group form__group_type_inline">
+							<input class="form__submit" type="submit" value="Загрузить">
+							<button class="button button_type_link modal__button-cancel modal__close" data-target="avatar-modal">Отменить</button>
+						</div>
+					</div>
+				</form>
+			</main>
+		</div>
+	</div>
+	<div class="overlay overlay_closed overlay_type_modal" id="modal-overlay"></div>
+	<script src="/static/assets/js/modal.js"></script>
+	<script type="module" src="/static/assets/js/profile.js"></script>
+</body>
+</html>
