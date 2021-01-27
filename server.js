@@ -36,5 +36,5 @@ app.get('/profile/password', function(req, res) {
 	res.sendFile(path.join(__dirname + '/static/profile-password.html'));
 });
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/static/'));
 app.listen(PORT, HOST);
